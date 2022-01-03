@@ -13,16 +13,21 @@ import Nav from './components/nav';
 export const meta: MetaFunction = () => {
     const description =
         'I create from small lambdas to full-blown web applications, always using well-tested cutting-edge technologies.';
+    const title = 'Nahuel Chaves';
+    const twitter = '@nchaves1986';
+
     return {
-        title: 'Nahuel Chaves',
         robots: 'follow, index',
+        title,
         description,
         'twitter:card': 'summary_large_image',
-        'twitter:creator': '@nchaves1986',
-        'twitter:site': '@nchaves1986',
-        'twitter:title': 'Nahuel Chaves',
-        'og:site_name': 'Nahuel Chaves',
-        "og:image": "https://remix-website.vercel.app/images/avatar.jpeg",
+        'twitter:creator': twitter,
+        'twitter:site': twitter,
+        'twitter:title': title,
+        'og:site_name': title,
+        'og:title': title,
+        'og:image': 'https://remix-website.vercel.app/images/avatar.jpeg',
+        "og:url": process.env.VERCEL_URL,
         'og:description': description,
     };
 };
@@ -30,9 +35,24 @@ export const meta: MetaFunction = () => {
 export function links() {
     return [
         { rel: 'stylesheet', href: styles },
-        { rel: 'icon', type: 'image/png', sizes: '16x16', href: './images/favicon-16x16.png'},
-        { rel: 'icon', type: 'image/png', sizes: '32x32', href: './images/favicon-32x32.png'},
-        { rel: 'icon', type: 'image/png', sizes: '96x96', href: './images/favicon-96x96.png'},
+        {
+            rel: 'icon',
+            type: 'image/png',
+            sizes: '16x16',
+            href: './images/favicon-16x16.png',
+        },
+        {
+            rel: 'icon',
+            type: 'image/png',
+            sizes: '32x32',
+            href: './images/favicon-32x32.png',
+        },
+        {
+            rel: 'icon',
+            type: 'image/png',
+            sizes: '96x96',
+            href: './images/favicon-96x96.png',
+        },
     ];
 }
 
