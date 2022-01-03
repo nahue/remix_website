@@ -10,6 +10,7 @@ import {
 import type { MetaFunction } from 'remix';
 import styles from './tailwind.css';
 import Nav from './components/nav';
+import { Footer } from './components/footer';
 
 export const loader = () => {
     return {
@@ -85,6 +86,8 @@ export default function Root() {
                             <Nav />
                         </div>
                         <Outlet />
+
+                        <Footer />
                     </div>
                 </main>
                 <ScrollRestoration />
