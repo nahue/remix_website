@@ -22,12 +22,18 @@ export const meta: MetaFunction = () => {
         'twitter:site': '@nchaves1986',
         'twitter:title': 'Nahuel Chaves',
         'og:site_name': 'Nahuel Chaves',
+        "og:image": "https://remix-website.vercel.app/images/avatar.jpeg",
         'og:description': description,
     };
 };
 
 export function links() {
-    return [{ rel: 'stylesheet', href: styles }];
+    return [
+        { rel: 'stylesheet', href: styles },
+        { rel: 'icon', type: 'image/png', sizes: '16x16', href: './images/favicon-16x16.png'},
+        { rel: 'icon', type: 'image/png', sizes: '32x32', href: './images/favicon-32x32.png'},
+        { rel: 'icon', type: 'image/png', sizes: '96x96', href: './images/favicon-96x96.png'},
+    ];
 }
 
 export default function App() {
