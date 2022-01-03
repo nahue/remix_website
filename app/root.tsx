@@ -5,12 +5,21 @@ import {
     Outlet,
     Scripts,
     ScrollRestoration,
+    useLoaderData,
 } from 'remix';
 import type { MetaFunction } from 'remix';
 import styles from './tailwind.css';
 import Nav from './components/nav';
 
-export const meta: MetaFunction = () => {
+export const loader = () => {
+    return {
+        ENV: {
+            VERCEL_URL: process.env.VERCEL_URL,
+        },
+    };
+};
+
+export const meta: MetaFunction = (appData) => {
     const description =
         'I create from small lambdas to full-blown web applications, always using well-tested cutting-edge technologies.';
     const title = 'Nahuel Chaves';
@@ -27,7 +36,7 @@ export const meta: MetaFunction = () => {
         'og:site_name': title,
         'og:title': title,
         'og:image': 'https://remix-website.vercel.app/images/avatar.jpeg',
-        "og:url": process.env.VERCEL_URL,
+        'og:url': appData.data.ENV.VERCEL_URL,
         'og:description': description,
     };
 };
@@ -56,7 +65,8 @@ export function links() {
     ];
 }
 
-export default function App() {
+export default function Root() {
+    const data = useLoaderData();
     return (
         <html lang='en'>
             <head>
@@ -78,6 +88,11 @@ export default function App() {
                     </div>
                 </main>
                 <ScrollRestoration />
+                {/* <script
+                    dangerouslySetInnerHTML={{
+                        __html: `window.ENV = ${JSON.stringify(data.ENV)}`,
+                    }}
+                /> */}
                 <Scripts />
                 {process.env.NODE_ENV === 'development' && <LiveReload />}
             </body>
