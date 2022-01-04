@@ -8,8 +8,8 @@ export const meta: MetaFunction = () => {
 
 export default function App() {
     return (
-        <>
-            <section className='w-full mx-auto px-0 lg:w-1/2 sm:w-1/2 xs:px-10 mt-10 ext-lg prose prose-lg'>
+        <div className='flex flex-col items-center'>
+            <section className='w-full px-0 mx-auto mt-10 prose prose-lg lg:w-1/2 sm:w-1/2 xs:px-10 ext-lg'>
                 <div>
                     <h1>Nahuel Chaves</h1>
                     <p>A brief summary of my professional life.</p>
@@ -68,20 +68,44 @@ export default function App() {
                     </p>
                 </div>
             </section>
-            <section className='flex w-1/2 mx-auto'>
-                <div className='mt-5 border-t border-gray-200 pt-5'>
+            <section className='flex w-1/2'>
+                <div className='pt-5 mt-5 prose prose-lg border-t border-gray-200 max-w-none'>
                     <dl>
                         <div className='sm:grid sm:grid-cols-3 sm:gap-4'>
                             <dt>
-                                Seats.io (Oct 2018 - Apr 2020)
+                                <strong>
+                                    Stealth Company (Apr 2020 - Currently
+                                    Working)
+                                </strong>
+                                <span className='block font-light'>
+                                    Principal Engineer
+                                </span>
+                            </dt>
+                            <dd>
+                                <h4 className="mt-0">Backend Stack:</h4>
+                                <ul>
+                                    <li>DynamoDB</li>
+                                    <li>OpenSearch</li>
+                                    <li>Lambda</li>
+                                    <li>AWS Glue</li>
+                                </ul>
+
+                                <h4>Web Stack</h4>
+                                <ul>
+                                    <li>NX.dev</li>
+                                    <li>Next.js</li>
+                                    <li>React (Typescript)</li>
+                                </ul>
+                            </dd>
+                        </div>
+                        <div className='mt-8 sm:grid sm:mt-5 sm:grid-cols-3 sm:gap-4 sm:border-t sm:border-gray-200 sm:pt-5'>
+                            <dt>
+                                <strong>Seats.io (Oct 2018 - Apr 2020)</strong>
                                 <span className='block font-light'>
                                     FullStack
                                 </span>
                             </dt>
-                            <dd
-                                className='mt-1 text-sm leading-5 text-gray-900 sm:mt-0
-                    sm:col-span-2'
-                            >
+                            <dd className='mt-1 leading-5 text-gray-900 sm:mt-0 sm:col-span-2'>
                                 Saas for building Seating Charts, its main focus
                                 is Ticketing Platforms. I worked both in the
                                 Java-based core and Typescript based frontend,
@@ -93,30 +117,21 @@ export default function App() {
                                 </strong>
                             </dd>
                         </div>
-                        <div
-                            className='mt-8 sm:grid sm:mt-5 sm:grid-cols-3 sm:gap-4 sm:border-t
-                sm:border-gray-200 sm:pt-5'
-                        >
-                            <dt className='text-sm leading-5 font-medium text-gray-500'>
-                                Zentricx (Dec 2014 - Oct 2018)
+                        <div className='mt-8 sm:grid sm:mt-5 sm:grid-cols-3 sm:gap-4 sm:border-t sm:border-gray-200 sm:pt-5'>
+                            <dt className='leading-5 text-gray-500'>
+                                <strong>Zentricx (Dec 2014 - Oct 2018)</strong>
                                 <span className='block font-light'>
                                     DevOps - FullStack
                                 </span>
                             </dt>
-                            <dd
-                                className='mt-1 text-sm leading-5 text-gray-900 sm:mt-0
-                    sm:col-span-2'
-                            >
+                            <dd className='mt-1 leading-5 text-gray-900 sm:mt-0 sm:col-span-2'>
                                 Here I managed Azure and AWS clouds for the
                                 company's clients always focusing on Customer
                                 Experience. Some environments include Docker
                                 containers, Websites, Web Applications, Mobile
                                 Backends, Databases. I'm working on projects
                                 such as:
-                                <ul
-                                    className='my-5 text-sm leading-5 text-gray-900 mt-5
-                        list-disc'
-                                >
+                                <ul className='my-5 mt-5 leading-5 text-gray-900 list-disc'>
                                     <li>
                                         Insurance company web application on
                                         Azure.
@@ -136,10 +151,7 @@ export default function App() {
                                 co-workers. Allows me to be involved in a number
                                 of projects with different approaches and techs
                                 like:
-                                <ul
-                                    className='my-5 text-sm leading-5 text-gray-900 mt-5
-                        list-disc'
-                                >
+                                <ul className='my-5 mt-5 leading-5 text-gray-900 list-disc'>
                                     <li>
                                         .NET with Entity Framework for SQL
                                         Server
@@ -150,26 +162,19 @@ export default function App() {
                                 </ul>
                             </dd>
                         </div>
-                        <div
-                            className='mt-8 sm:grid sm:mt-5 sm:grid-cols-3 sm:gap-4 sm:border-t
-                sm:border-gray-200 sm:pt-5'
-                        >
-                            <dt className='text-sm leading-5 font-medium text-gray-500'>
-                                Valley Works (Dec 2014 - Oct 2018)
+                        <div className='mt-8 sm:grid sm:mt-5 sm:grid-cols-3 sm:gap-4 sm:border-t sm:border-gray-200 sm:pt-5'>
+                            <dt className='leading-5 text-gray-500'>
+                                <strong>
+                                    Valley Works (Dec 2014 - Oct 2018)
+                                </strong>
                                 <span className='block font-light'>
                                     DevOps - FullStack
                                 </span>
                             </dt>
-                            <dd
-                                className='mt-1 text-sm leading-5 text-gray-900 sm:mt-0
-                    sm:col-span-2'
-                            >
+                            <dd className='mt-1 leading-5 text-gray-900 sm:mt-0 sm:col-span-2'>
                                 I've was involved in the majority of the
                                 company's projects, for companies like:
-                                <ul
-                                    className='my-5 text-sm leading-5 text-gray-900 mt-5
-                        list-disc'
-                                >
+                                <ul className='my-5 mt-5 leading-5 text-gray-900 list-disc'>
                                     <li>Quadrant</li>
                                     <li>FeeTrader</li>
                                     <li>Plantbid</li>
@@ -188,6 +193,6 @@ export default function App() {
                     </dl>
                 </div>
             </section>
-        </>
+        </div>
     );
 }

@@ -86,7 +86,6 @@ export default function Root() {
                             <Nav />
                         </div>
                         <Outlet />
-
                         <Footer />
                     </div>
                 </main>

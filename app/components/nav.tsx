@@ -14,7 +14,6 @@ import { useLocation } from 'remix';
 
 const Nav = () => {
     let location = useLocation();
-    console.log(location)
     return (
         <nav className='relative flex items-center justify-between max-w-screen-xl px-4 mx-auto sm:px-6'>
             <div className='flex items-center flex-1'>
@@ -40,16 +39,16 @@ const Nav = () => {
                         </button>
                     </div>
                 </div>
-                <div className='hidden md:grid grid-cols-4 gap-4'>
+                <div className='hidden grid-cols-4 gap-4 md:grid'>
                     <a
                         href='/'
                         // class:text-gray-900={segment === 'home'}
                         // aria-current={segment === 'home' ? 'page' : undefined}
                         className={classnames([
                             {
-                                'text-gray-900': location.pathname == '/'
+                                'text-gray-900': location.pathname == '/',
                             },
-                            'font-medium text-gray-300 transition duration-150 ease-in-out hover:text-gray-900 focus:outline-none focus:text-gray-900'
+                            'font-medium text-gray-300 transition duration-150 ease-in-out hover:text-gray-900 focus:outline-none focus:text-gray-900',
                         ])}
                     >
                         Home
@@ -59,9 +58,9 @@ const Nav = () => {
                         // aria-current={segment === 'resume' ? 'page' : undefined}
                         className={classnames([
                             {
-                                'text-gray-900': location.pathname == '/resume'
+                                'text-gray-900': location.pathname == '/resume',
                             },
-                            'font-medium text-gray-300 transition duration-150 ease-in-out hover:text-gray-900 focus:outline-none focus:text-gray-900'
+                            'font-medium text-gray-300 transition duration-150 ease-in-out hover:text-gray-900 focus:outline-none focus:text-gray-900',
                         ])}
                     >
                         Resume
