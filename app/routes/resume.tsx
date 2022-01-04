@@ -9,7 +9,7 @@ export const meta: MetaFunction = () => {
 export default function App() {
     return (
         <div className='flex flex-col items-center'>
-            <section className='w-full px-0 mx-auto mt-10 prose prose-lg lg:w-1/2 sm:w-1/2 xs:px-10 ext-lg'>
+            <section className='w-full px-10 mx-auto mt-10 prose prose-lg lg:w-1/2 md:px-0 ext-lg'>
                 <div>
                     <h1>Nahuel Chaves</h1>
                     <p>A brief summary of my professional life.</p>
@@ -68,8 +68,8 @@ export default function App() {
                     </p>
                 </div>
             </section>
-            <section className='flex w-1/2'>
-                <div className='pt-5 mt-5 prose prose-lg border-t border-gray-200 max-w-none'>
+            <section className='flex w-full lg:w-1/2'>
+                <div className='px-10 pt-5 mt-5 prose prose-lg border-t border-gray-200 max-w-none lg:px-0'>
                     <dl>
                         <div className='sm:grid sm:grid-cols-3 sm:gap-4'>
                             <dt>
@@ -81,7 +81,8 @@ export default function App() {
                                     Principal Engineer
                                 </span>
                             </dt>
-                            <dd>
+                            <dd className='mt-1 sm:mt-0 sm:col-span-2'>
+                                <p>Relationships based startup</p>
                                 <h4 className="mt-0">Backend Stack:</h4>
                                 <ul>
                                     <li>DynamoDB</li>
@@ -98,14 +99,14 @@ export default function App() {
                                 </ul>
                             </dd>
                         </div>
-                        <div className='mt-8 sm:grid sm:mt-5 sm:grid-cols-3 sm:gap-4 sm:border-t sm:border-gray-200 sm:pt-5'>
+                        <div className='pt-5 mt-8 border-t border-gray-200 sm:grid sm:mt-5 sm:grid-cols-3 sm:gap-4'>
                             <dt>
                                 <strong>Seats.io (Oct 2018 - Apr 2020)</strong>
                                 <span className='block font-light'>
                                     FullStack
                                 </span>
                             </dt>
-                            <dd className='mt-1 leading-5 text-gray-900 sm:mt-0 sm:col-span-2'>
+                            <dd className='col-span-2 mt-1'>
                                 Saas for building Seating Charts, its main focus
                                 is Ticketing Platforms. I worked both in the
                                 Java-based core and Typescript based frontend,
@@ -117,21 +118,21 @@ export default function App() {
                                 </strong>
                             </dd>
                         </div>
-                        <div className='mt-8 sm:grid sm:mt-5 sm:grid-cols-3 sm:gap-4 sm:border-t sm:border-gray-200 sm:pt-5'>
-                            <dt className='leading-5 text-gray-500'>
+                        <div className='pt-5 mt-8 border-t border-gray-200 sm:grid sm:mt-5 sm:grid-cols-3 sm:gap-4'>
+                            <dt>
                                 <strong>Zentricx (Dec 2014 - Oct 2018)</strong>
                                 <span className='block font-light'>
                                     DevOps - FullStack
                                 </span>
                             </dt>
-                            <dd className='mt-1 leading-5 text-gray-900 sm:mt-0 sm:col-span-2'>
+                            <dd className='col-span-2 mt-1'>
                                 Here I managed Azure and AWS clouds for the
                                 company's clients always focusing on Customer
                                 Experience. Some environments include Docker
                                 containers, Websites, Web Applications, Mobile
                                 Backends, Databases. I'm working on projects
                                 such as:
-                                <ul className='my-5 mt-5 leading-5 text-gray-900 list-disc'>
+                                <ul>
                                     <li>
                                         Insurance company web application on
                                         Azure.
@@ -151,7 +152,7 @@ export default function App() {
                                 co-workers. Allows me to be involved in a number
                                 of projects with different approaches and techs
                                 like:
-                                <ul className='my-5 mt-5 leading-5 text-gray-900 list-disc'>
+                                <ul>
                                     <li>
                                         .NET with Entity Framework for SQL
                                         Server
@@ -162,8 +163,8 @@ export default function App() {
                                 </ul>
                             </dd>
                         </div>
-                        <div className='mt-8 sm:grid sm:mt-5 sm:grid-cols-3 sm:gap-4 sm:border-t sm:border-gray-200 sm:pt-5'>
-                            <dt className='leading-5 text-gray-500'>
+                        <div className='pt-5 mt-8 border-t border-gray-200 sm:grid sm:mt-5 sm:grid-cols-3 sm:gap-4'>
+                            <dt>
                                 <strong>
                                     Valley Works (Dec 2014 - Oct 2018)
                                 </strong>
@@ -171,10 +172,10 @@ export default function App() {
                                     DevOps - FullStack
                                 </span>
                             </dt>
-                            <dd className='mt-1 leading-5 text-gray-900 sm:mt-0 sm:col-span-2'>
+                            <dd className='col-span-2 mt-1'>
                                 I've was involved in the majority of the
                                 company's projects, for companies like:
-                                <ul className='my-5 mt-5 leading-5 text-gray-900 list-disc'>
+                                <ul>
                                     <li>Quadrant</li>
                                     <li>FeeTrader</li>
                                     <li>Plantbid</li>
