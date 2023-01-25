@@ -29,8 +29,28 @@ export default function App() {
                     </p>
                     <p>
                         I've also been developing my Full Stack skills with many
-                        languages such as PHP, Python, Javascript, C#, and a lot
-                        of well-known frameworks.
+                        languages such as{' '}
+                        <ul>
+                            <li>
+                                <strong>Python</strong>
+                            </li>
+                            <li>
+                                <strong>TypeScript</strong>
+                            </li>
+                            <li>
+                                <strong>C#</strong>
+                            </li>
+                            <li>
+                                <strong>Java</strong>
+                            </li>
+                            <li>
+                                <strong>PHP</strong>
+                            </li>
+                            <li>
+                                <strong>Elixir</strong>
+                            </li>
+                        </ul>
+                        and a lot of well-known frameworks.
                     </p>
                     <p>
                         I can say I have experience with other aspects of
@@ -39,13 +59,6 @@ export default function App() {
 
                     <ul>
                         <li>HTML and CSS for mocking UI's</li>
-                        <li>Programming Languages:
-                            <ul>
-                                <li>Python</li>
-                                <li>TypeScript</li>
-                                <li>Java</li>
-                            </ul>
-                        </li>
                         <li>
                             Data Storages such as{' '}
                             <strong>
@@ -62,7 +75,8 @@ export default function App() {
                                 <li>Pandas</li>
                             </ul>
                         </li>
-                        <li>Analytics Solutions like
+                        <li>
+                            Analytics Solutions like
                             <ul>
                                 <li>Rockset</li>
                                 <li>Elasticsearch</li>
@@ -74,8 +88,8 @@ export default function App() {
                             building Micro Services platforms.
                         </li>
                         <li>
-                            Code Integration and Code Delivery using GitHub Actions, or CircleCI
-                            and Jenkins.
+                            Code Integration and Code Delivery using GitHub
+                            Actions, or CircleCI and Jenkins.
                         </li>
                     </ul>
                     <p>
@@ -103,25 +117,38 @@ export default function App() {
                                 </span>
                             </dt>
                             <dd className='mt-1 sm:mt-0 sm:col-span-2'>
-                                <p>Relationship-driven startup for the VC industry</p>
+                                <p>
+                                    Relationship-driven startup for the VC
+                                    industry
+                                </p>
 
-                                <h4 className="mt-0">ETL:</h4>
+                                <h4 className='mt-0'>ETL:</h4>
                                 <ul>
                                     <li>
-                                        <strong className="block">AWS Glue PySpark pipelines</strong>
+                                        <strong className='block'>
+                                            AWS Glue PySpark pipelines
+                                        </strong>
                                         <span>
-                                            Used Glue to do ETL processes from public datasources, with PII complaint data normalization and matching to provide a single datapoint that can be broken down and tracked to its origin.
+                                            Used Glue to do ETL processes from
+                                            public datasources, with PII
+                                            complaint data normalization and
+                                            matching to provide a single
+                                            datapoint that can be broken down
+                                            and tracked to its origin.
                                         </span>
                                     </li>
                                     <li>
-                                    <strong className="block">Nylas</strong>
-                                    <span>
-                                        Used Nylas services to build ETL pipelines to ingest Email and Calendar data, and also match to internal entities.
-                                    </span>
+                                        <strong className='block'>Nylas</strong>
+                                        <span>
+                                            Used Nylas services to build ETL
+                                            pipelines to ingest Email and
+                                            Calendar data, and also match to
+                                            internal entities.
+                                        </span>
                                     </li>
                                 </ul>
 
-                                <h4 className="mt-0">Backend Stack:</h4>
+                                <h4 className='mt-0'>Backend Stack:</h4>
                                 <ul>
                                     <li>DynamoDB</li>
                                     <li>Rockset (Analytics)</li>
