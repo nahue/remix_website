@@ -39,13 +39,34 @@ export default function App() {
 
                     <ul>
                         <li>HTML and CSS for mocking UI's</li>
+                        <li>Programming Languages:
+                            <ul>
+                                <li>Python</li>
+                                <li>TypeScript</li>
+                                <li>Java</li>
+                            </ul>
+                        </li>
                         <li>
-                            Databases such as{' '}
+                            Data Storages such as{' '}
                             <strong>
-                                SQL Server, MongoDB, PostgreSQL, MySQL
+                                SQL Server, DynamoDB, MongoDB, PostgreSQL, MySQL
                             </strong>
                             and its forks (mainly for querying, but I also did
                             some installations and essential management)
+                        </li>
+                        <li>
+                            ETL Solutions like
+                            <ul>
+                                <li>AWS Glue</li>
+                                <li>PySpark</li>
+                                <li>Pandas</li>
+                            </ul>
+                        </li>
+                        <li>Analytics Solutions like
+                            <ul>
+                                <li>Rockset</li>
+                                <li>Elasticsearch</li>
+                            </ul>
                         </li>
                         <li>
                             Containers using{' '}
@@ -53,7 +74,7 @@ export default function App() {
                             building Micro Services platforms.
                         </li>
                         <li>
-                            Code Integration and Code Delivery using CircleCI
+                            Code Integration and Code Delivery using GitHub Actions, or CircleCI
                             and Jenkins.
                         </li>
                     </ul>
@@ -82,11 +103,28 @@ export default function App() {
                                 </span>
                             </dt>
                             <dd className='mt-1 sm:mt-0 sm:col-span-2'>
-                                <p>Relationships based startup</p>
+                                <p>Relationship-driven startup for the VC industry</p>
+
+                                <h4 className="mt-0">ETL:</h4>
+                                <ul>
+                                    <li>
+                                        <strong className="block">AWS Glue PySpark pipelines</strong>
+                                        <span>
+                                            Used Glue to do ETL processes from public datasources, with PII complaint data normalization and matching to provide a single datapoint that can be broken down and tracked to its origin.
+                                        </span>
+                                    </li>
+                                    <li>
+                                    <strong className="block">Nylas</strong>
+                                    <span>
+                                        Used Nylas services to build ETL pipelines to ingest Email and Calendar data, and also match to internal entities.
+                                    </span>
+                                    </li>
+                                </ul>
+
                                 <h4 className="mt-0">Backend Stack:</h4>
                                 <ul>
                                     <li>DynamoDB</li>
-                                    <li>OpenSearch</li>
+                                    <li>Rockset (Analytics)</li>
                                     <li>Lambda</li>
                                     <li>AWS Glue</li>
                                 </ul>
